@@ -3,3 +3,15 @@
   padding: 0;
   box-sizing: border-box
 }
+
+/* variables */
+:root {
+   --primary-color: #0a9c6f;
+  --grey-900: #0d1919;
+  --grey-700: #1f2c34;
+  --grey-300: #eff1f3;
+  --grey-200: #fffeff;
+  --green-400: #138b80;
+  --green-300: #2dca7a;
+  --green-100: #eff1f3;
+}
