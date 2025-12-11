@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
+  font-family: var(--primary-font)
 }
 
 /* variables */
@@ -14,4 +15,6 @@
   --green-400: #138b80;
   --green-300: #2dca7a;
   --green-100: #eff1f3;
+
+  --primary-font: "Roboto", sans-serif
 }
