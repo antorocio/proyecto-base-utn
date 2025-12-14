@@ -128,7 +128,7 @@ outline: 1px solid var(--grey-300);
 
 .user-chat img {
     border-radius: 50%;
-    width: 60px;
+    width: 50px;
 } 
 
 .user-chat:hover {
