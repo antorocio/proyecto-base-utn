@@ -34,7 +34,7 @@ body {
 }
 
 
-/* aside styles*/
+/* aside styles */
 aside {
     background-color: var(--grey-900);
     color: white;
@@ -90,7 +90,7 @@ aside header {
     transform: translateY(-4px);
 }
 
-/*search input*/
+/* div search styles */
 .search {
     background-color: var(--grey-800);
     padding:10px
@@ -109,6 +109,35 @@ aside header {
 .search input:focus {
 outline: 1px solid var(--grey-300);
 }
+
+/* section chats styles*/ 
+
+.chats ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-chat {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+} 
+
+.user-chat img {
+    border-radius: 50%;
+    width: 60px;
+} 
+
+.user-chat:hover {
+    background-color: var(--grey-700);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
 
 
 img {
