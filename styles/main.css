@@ -11,8 +11,10 @@
   --grey-900: #0d1919;
   --grey-800: #121b1e;
   --grey-700: #1f2c34;
-  --grey-300: #eff1f3;
-  --grey-200: #fffeff;
+  --grey-600: #89898a;
+  --grey-500: #dfdfe1;
+  --grey-300: #f1f2f6;
+  --grey-200: #f3f5e9;
   --green-400: #138b80;
   --green-300: #2dca7a;
   --green-100: #eff1f3;
@@ -22,7 +24,7 @@
 
 body {
     background-color: var(--primary-color);
-    padding: 40px;
+    padding: 20px 40px;
 }
 
 .app {
@@ -31,10 +33,12 @@ body {
     grid-template-columns: 320px 1fr;
     height: 100vh;
     overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
 
-/* aside styles */
+/* aside header */
 aside {
     background-color: var(--grey-900);
     color: white;
@@ -90,7 +94,7 @@ aside header {
     transform: translateY(-4px);
 }
 
-/* div search styles */
+/* search */
 .search {
     background-color: var(--grey-800);
     padding:10px
@@ -110,8 +114,7 @@ aside header {
 outline: 1px solid var(--grey-300);
 }
 
-/* section chats styles*/ 
-
+/* chats */ 
 .chats ul{
     list-style: none;
     display: flex;
@@ -138,8 +141,94 @@ outline: 1px solid var(--grey-300);
 }
 
 
+/* chat header */
+.chat-header {
+    background-color: var(--grey-200);
+    border-bottom: 1px solid var(--grey-600);
+    display:flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-header img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.chat-header p {
+    color: var(--grey-600)
+}
 
 
-img {
-    width: 80px;
+/* agregar messages styles*/
+
+
+/* chat footer */
+footer {
+    background-color: var(--grey-200);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+footer button {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
+footer svg {
+    width: 100%;
+    height: 100%;
+}
+
+footer .attach {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--grey-600);
+    transition: color 0.3s;
+}
+
+footer .attach:hover {
+    color: var(--grey-700);
+}
+
+footer form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+footer textarea {
+    width: 100%;
+    padding: 5px 20px;
+    resize: none;
+    border-radius: 20px;
+    border: none;
+}
+
+footer textarea:focus {
+    outline: 1px solid var(--grey-600);
+    border: none;
+}
+
+footer .send {
+    background-color: var(--green-300);
+    border: none;
+    color: var(--grey-300);
+    width: 45px;
+    height: 35px;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+footer .send:hover {
+    background-color: var(--green-400);
+    transform: scale(0.95);
 }
