@@ -7,7 +7,7 @@
 
 /* variables */
 :root {
-   --primary-color: #0a9c6f;
+    --primary-color: #0a9c6f;
   --grey-900: #0d1919;
   --grey-800: #121b1e;
   --grey-700: #1f2c34;
@@ -38,7 +38,6 @@ body {
     border-radius: 15px;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
-
 
 /* aside header */
 aside {
@@ -142,7 +141,6 @@ outline: 1px solid var(--grey-300);
     border-radius: 10px;
 }
 
-
 /* chat header */
 .chat-header {
     background-color: var(--grey-200);
@@ -161,7 +159,6 @@ outline: 1px solid var(--grey-300);
 .chat-header p {
     color: var(--grey-600)
 }
-
 
 /* messages */
 .chat-panel {
@@ -183,7 +180,7 @@ outline: 1px solid var(--grey-300);
     border-radius: 10px;
     box-shadow:  0 2px 6px rgba(0, 0, 0, 0.238);
     padding: 10px;
-    width: 60%;
+    max-width: 60%;
 }
 
 .messages .time {
@@ -196,7 +193,6 @@ outline: 1px solid var(--grey-300);
     align-self: end;
     background-color: var(--green-100);
 }
-
 
 /* chat footer */
 footer {
@@ -266,7 +262,6 @@ footer .send:hover {
     background-color: var(--green-400);
     transform: scale(0.95);
 }
-
 
 /* responsive design */
 @media (max-width: 880px) {
